@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f5f9fb;
+    color: #203040;
+}
+
+header {
+    background: #123d58;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: #66ded2;
+}
+
+section {
+    padding: 50px 8%;
+    text-align: center;
+}
+
+.hero {
+    background: #e0f5f2;
+    padding: 80px 10%;
+}
+
+.hero h1 {
+    color: #123d58;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+.btn {
+    background: #0b9b91;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    margin: 15px 0;
+}
+
+.btn:hover {
+    background: #087d76;
+}
+
+.hero h2 {
+    margin-top: 25px;
+    color: #123d58;
+}
+
+section h2 {
+    color: #123d58;
+    margin-bottom: 25px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card, .contact {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #00000015;
+}
+
+.card h3 {
+    color: #0b9b91;
+    margin-bottom: 10px;
+}
+
+.services {
+    max-width: 500px;
+    margin: auto;
+    text-align: left;
+}
+
+.services p {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.contact {
+    max-width: 650px;
+    margin: auto;
+    text-align: left;
+}
+
+.contact p {
+    margin: 10px;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #00000015;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+}
+
+#message {
+    margin-top: 15px;
+    font-weight: bold;
+    white-space: pre-line;
+}
+
+.faq {
+    max-width: 700px;
+    margin: 15px auto;
+    text-align: left;
+}
+
+.question {
+    width: 100%;
+    padding: 15px;
+    background: #dff4f1;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-size: 16px;
+}
+
+.answer {
+    display: none;
+    padding: 15px;
+    background: white;
+}
+
+.faq.active .answer {
+    display: block;
+}
+
+footer {
+    background: #123d58;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 800px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

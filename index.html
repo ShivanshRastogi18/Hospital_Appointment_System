@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CarePoint Hospital</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>CarePoint Hospital +</h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#departments">Departments</a>
+        <a href="#doctors">Doctors</a>
+        <a href="#services">Services</a>
+        <a href="#appointment">Appointment</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <h1>Quality Healthcare For Everyone</h1>
+    <p>Your health is our priority. Book an appointment with our experienced doctors.</p>
+    <a href="#appointment" class="btn">Book Appointment</a>
+    <h2>Emergency Helpline: 112</h2>
+</section>
+
+<section id="departments">
+    <h2>Our Departments</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Cardiology</h3>
+            <p>Heart-related treatments.</p>
+        </div>
+        <div class="card">
+            <h3>General Medicine</h3>
+            <p>Treatment for common illnesses.</p>
+        </div>
+        <div class="card">
+            <h3>Paediatrics</h3>
+            <p>Medical care for children.</p>
+        </div>
+        <div class="card">
+            <h3>Orthopaedics</h3>
+            <p>Bone and joint treatments.</p>
+        </div>
+    </div>
+</section>
+
+<section id="doctors">
+    <h2>Our Doctors</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Dr. Ananya Kapoor</h3>
+            <p>Cardiologist</p>
+        </div>
+        <div class="card">
+            <h3>Dr. Rahul Sharma</h3>
+            <p>General Physician</p>
+        </div>
+        <div class="card">
+            <h3>Dr. Priya Mehta</h3>
+            <p>Paediatrician</p>
+        </div>
+        <div class="card">
+            <h3>Dr. Arjun Verma</h3>
+            <p>Orthopaedic</p>
+        </div>
+    </div>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+        <p>✔ 24/7 Emergency Services</p>
+        <p>✔ Laboratory Tests</p>
+        <p>✔ Pharmacy Services</p>
+        <p>✔ Health Checkups</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Visiting Hours & Contact</h2>
+    <div class="contact">
+        <p><b>OPD:</b> Monday-Saturday, 8 AM - 8 PM</p>
+        <p><b>Sunday:</b> 9 AM - 1 PM</p>
+        <p><b>Patient Visiting:</b> 4 PM - 7 PM</p>
+        <p><b>Address:</b> 21 Health Avenue, Ghaziabad, UP</p>
+        <p><b>Phone:</b> +91 98765 43210</p>
+    </div>
+</section>
+
+<section id="appointment">
+    <h2>Book an Appointment</h2>
+    <form id="appointmentForm">
+
+        <label>Patient Name:</label>
+        <input type="text" id="name" required>
+
+        <label>Age:</label>
+        <input type="number" id="age" min="1" max="120" required>
+
+        <label>Phone Number:</label>
+        <input type="tel" id="phone" required>
+
+        <label>Department:</label>
+        <select id="department" required>
+            <option value="">Select Department</option>
+            <option>Cardiology</option>
+            <option>General Medicine</option>
+            <option>Paediatrics</option>
+            <option>Orthopaedics</option>
+        </select>
+
+        <label>Doctor:</label>
+        <select id="doctor" required>
+            <option value="">Select Doctor</option>
+            <option>Dr. Ananya Kapoor</option>
+            <option>Dr. Rahul Sharma</option>
+            <option>Dr. Priya Mehta</option>
+            <option>Dr. Arjun Verma</option>
+        </select>
+
+        <label>Appointment Date:</label>
+        <input type="date" id="date" required>
+
+        <label>Appointment Time:</label>
+        <input type="time" id="time" required>
+
+        <label>Reason for Visit:</label>
+        <textarea id="reason" required></textarea>
+
+        <button type="submit" class="btn">Confirm Appointment</button>
+        <p id="message"></p>
+    </form>
+</section>
+
+<section id="faq">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq">
+        <button class="question">Can I book an appointment online?</button>
+        <p class="answer">Yes, you can book an appointment using our online form.</p>
+    </div>
+
+    <div class="faq">
+        <button class="question">What should I bring to the hospital?</button>
+        <p class="answer">Bring your ID proof and previous medical reports.</p>
+    </div>
+
+    <div class="faq">
+        <button class="question">What should I do in an emergency?</button>
+        <p class="answer">Contact emergency services immediately.</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 CarePoint Hospital | Student Project</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
